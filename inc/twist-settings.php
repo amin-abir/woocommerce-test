@@ -478,17 +478,17 @@ class WeDevs_Settings_API_Test {
                     
                     
                 ),
-                array(
-                    'name'    => 'layout_pb',
-                    'label'   => __( 'Custom Single Page', 'twist' ),
-                    'desc'        => __( 'If you are using Visual composer and use custom single Product page <br>then you can see a new shortcode called "Twist" under WooCommerce tab into VC page Builder.', 'twist' ),
-                    'type'    => 'checkbox',
-                    'default' => 'false',
-                    'options' => array(
-                        'true' => 'Yes',
-                        'false'  => 'No'
-                    )
-                ),
+                // array(
+                //     'name'    => 'layout_pb',
+                //     'label'   => __( 'Custom Single Page', 'twist' ),
+                //     'desc'        => __( 'If you are using Visual composer and use custom single Product page <br>then you can see a new shortcode called "Twist" under WooCommerce tab into VC page Builder.', 'twist' ),
+                //     'type'    => 'checkbox',
+                //     'default' => 'false',
+                //     'options' => array(
+                //         'true' => 'Yes',
+                //         'false'  => 'No'
+                //     )
+                // ),
                  array(
                 'name' => 'custom_css',
                 'label' => __('Custom Css', 'twist'),

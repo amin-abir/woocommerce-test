@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Twist
+ * Plugin Name:       Woo Slider
  * Plugin URI:        https://codecanyon.net/item/twist-product-gallery-slidercarousel-plugin-for-woocommerce/14849108
  * Description:       Easily add a carousel to your WooCommerce product gallery.
  * Version:           2.1
@@ -144,17 +144,17 @@ add_filter( 'attachment_fields_to_save', 'twist_add_video_url_save', 10, 2 );
 * Hooked to the wp_print_scripts action, with a late priority (100),
 * so that it is after the script was enqueued.
 */
-function twist_dequeue_script() {
-wp_dequeue_script( 'cornerstone-site-head' );
-wp_dequeue_script( 'cornerstone-site-body' );
-}
+// function twist_dequeue_script() {
+// wp_dequeue_script( 'cornerstone-site-head' );
+// wp_dequeue_script( 'cornerstone-site-body' );
+// }
 
-$themeco = twist_get_option( 'themeco', 'twist_advance','false');
-if($themeco == 'true'){
+// $themeco = twist_get_option( 'themeco', 'twist_advance','false');
+// if($themeco == 'true'){
 
-add_action( 'wp_print_scripts', 'twist_dequeue_script', 100 );
+// add_action( 'wp_print_scripts', 'twist_dequeue_script', 100 );
 	
-}
+// }
 
 /**
  * Register the JS & CSS for the public-facing side of the site.

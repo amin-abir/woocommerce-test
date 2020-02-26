@@ -56,7 +56,7 @@ $lightbox_framewidth = twist_get_option( 'lightbox_framewidth', 'lightbox_option
 
 $zoom_zoom_start = twist_get_option( 'zoom_start', 'zoom_magify','false');
 
-$twist_advance_layout_broke = twist_get_option( 'layout_broke', 'twist_advance');
+//$twist_advance_layout_broke = twist_get_option( 'layout_broke', 'twist_advance');
 $twist_advance_css = twist_get_option( 'custom_css', 'twist_advance','');
 
 
@@ -69,7 +69,7 @@ if($lightbox == 'true'){
 ?>
 
 
-<div class="images twist-wrap <?php echo $twist_advance_layout_broke; ?>">
+<div class="images twist-wrap">
 
 <div class="twist-pgs" <?php if($rtl == 'true'): echo ' dir="rtl" '; endif; ?>>
 <?php 

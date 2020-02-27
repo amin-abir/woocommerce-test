@@ -9,7 +9,7 @@ if ( !class_exists('WeDevs_Settings_API_Test' ) ):
 class WeDevs_Settings_API_Test {
 
     private $settings_api;
-    public $responseObj;
+    //public $responseObj;
 
     function __construct() {
 
@@ -37,65 +37,7 @@ class WeDevs_Settings_API_Test {
             'woocommerce', 'Twist Settings', 'Twist Settings', 'manage_options', 'twist', array(&$this, 'plugin_page')
         );
     }
-       function Activated(){
-      
-            ?>
-          
-            <form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
-                <input type="hidden" name="action" value="Twist_el_deactivate_license"/>
-                <div class="el-license-container shoe-data-lic">
-                   
-                    <ul class="el-license-info">
-                    <li>
-                        <div>
-                            <span class="el-license-info-title">Status</span>
-
-    			            <?php if ( $this->responseObj->is_valid ) : ?>
-                                <span class="el-license-valid">Valid</span>
-    			            <?php else : ?>
-                                <span class="el-license-valid">Invalid</span>
-    			            <?php endif; ?>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div>
-                            <span class="el-license-info-title">License Type</span>
-    			            <?php echo $this->responseObj->license_title; ?>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div>
-                            <span class="el-license-info-title">License Expired on</span>
-    			            <?php echo $this->responseObj->expire_date; ?>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div>
-                            <span class="el-license-info-title">Support Expired on</span>
-    			            <?php echo $this->responseObj->support_end; ?>
-                        </div>
-                    </li>
-                        <li>
-                            <div>
-                                <span class="el-license-info-title">Your License Key</span>
-                                <span class="el-license-key"><?php echo esc_attr( substr($this->responseObj->license_key,0,9)."XXXXXXXX-XXXXXXXX".substr($this->responseObj->license_key,-9) ); ?></span>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="el-license-active-btn">
-    				    <?php wp_nonce_field( 'el-license' ); ?>
-    				    <?php submit_button('Deactivate'); ?>
-                    </div>
-                </div>
-            </form>
-            
-        <?php
-    
-
-    }
+       
     function get_settings_sections() {
 
 
@@ -116,10 +58,10 @@ class WeDevs_Settings_API_Test {
                 'id'    => 'zoom_magify',
                 'title' => __( 'Zoom Options', 'twist' )
             ),
-            array(
-                'id'    => 'twist_advance',
-                'title' => __( 'Advance Options', 'twist' )
-            ),
+            // array(
+            //     'id'    => 'twist_advance',
+            //     'title' => __( 'Advance Options', 'twist' )
+            // ),
             array(
                 'id'    => 'wedevs_advanced',
                 'title' => __( ' Twist License Info', 'twist' )
@@ -384,7 +326,7 @@ class WeDevs_Settings_API_Test {
                     'label'   => __( 'Preloader', 'twist' ),
                     
                     'type'    => 'select',
-                    'default' => 'double-bounce',
+                    'default' => 'cube-grid',
                     'options' => array(
                         'rotating-plane' => 'Rotating Plane',
                         'double-bounce'  => 'Double Bounce',
@@ -549,7 +491,7 @@ class WeDevs_Settings_API_Test {
 
         $this->settings_api->show_navigation();
         $this->settings_api->show_forms();
-        $this->Activated();
+       
        
         echo '</div>';
     }

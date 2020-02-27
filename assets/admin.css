@@ -17,9 +17,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #36d692;
+  border-color: #36d692;
   -webkit-transition: .4s;
   transition: .4s;
+  border-radius: 40px;
 }
 label.switch {
     color: transparent;
@@ -37,7 +39,7 @@ label.switch {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #36d692;
 }
 
 input:focus + .slider {

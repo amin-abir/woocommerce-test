@@ -226,12 +226,12 @@ if ( $attachment_ids && has_post_thumbnail() ) {
 		//$watermark_class = 'twist-video-thumb';
 		$href = 'href';
 
-		if(empty($pgs_video)) {
+		// if(empty($pgs_video)) {
 
-			$pgs_video = $full_size_image[0];
-			$datatype = '';
-			$watermark_class = '';
-		}
+		// 	$pgs_video = $full_size_image[0];
+		// 	$datatype = '';
+		// 	$watermark_class = '';
+		// }
 		if($lightbox == 'false'){
 			$href = 'data-href';
 		}

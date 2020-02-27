@@ -247,19 +247,7 @@ if ( $attachment_ids && has_post_thumbnail() ) {
 </div>
 
 <?php
-// Feature Image Hide thumbnail options
-/*
 
-$ = twist_get_option( 'arrowsColor', 'lightbox_options');
-$ = twist_get_option( 'bgcolor', 'lightbox_options');
-$lightbox_spinColor = twist_get_option( 'spinColor', 'lightbox_options');
-$lightbox_spinner = twist_get_option( 'spinner', 'lightbox_options');
-$lightbox_autoplay_videos = twist_get_option( 'autoplay_videos', 'lightbox_options');
-$ = twist_get_option( 'numeratio', 'lightbox_options');
-$lightbox_titlePosition = twist_get_option( 'titlePosition', 'lightbox_options');
-$ = twist_get_option( 'titleBackground', 'lightbox_options');
-$ = twist_get_option( 'titleColor', 'lightbox_options');*
-*/
  endif; ?>
 
 </div>

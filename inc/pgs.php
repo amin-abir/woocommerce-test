@@ -221,9 +221,9 @@ if ( $attachment_ids && has_post_thumbnail() ) {
 		/**
 		 * Check if Gallery have Video URL
 		 */
-		$pgs_video = get_post_meta($attachment_id, 'twist_video_url', true); // Twist Video URL
-		$datatype = 'data-vbtype="video"';
-		$watermark_class = 'twist-video-thumb';
+		//$pgs_video = get_post_meta($attachment_id, 'twist_video_url', true); // Twist Video URL
+		//$datatype = 'data-vbtype="video"';
+		//$watermark_class = 'twist-video-thumb';
 		$href = 'href';
 
 		if(empty($pgs_video)) {

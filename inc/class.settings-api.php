@@ -226,7 +226,7 @@ class WeDevs_Settings_API {
         $html  = '<fieldset>';
         $html  .= sprintf( '<label class="switch" for="wpuf-%1$s[%2$s]">', $args['section'], $args['id'] );
         $html  .= sprintf( '<input type="hidden" name="%1$s[%2$s]" value="false" />', $args['section'], $args['id'] );
-        $html  .= sprintf( '<input type="checkbox" class="checkbox" id="wpuf-%1$s[%2$s]" name="%1$s[%2$s]" value="true" %3$s />', $args['section'], $args['id'], checked( $value, 'true', false ) );
+        $html  .= sprintf( '<input type="checkbox" class="checkbox pgw-checkbox" id="wpuf-%1$s[%2$s]" name="%1$s[%2$s]" value="true" %3$s />', $args['section'], $args['id'], checked( $value, 'true', false ) );
         $html .= ' <span class="slider"></span>';
         $html  .= sprintf( '</label>');
         $html  .= '</fieldset>';

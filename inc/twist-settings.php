@@ -460,11 +460,7 @@ class WeDevs_Settings_API_Test {
                         If you found any problems in this Plugin please let us know. we will try to fix it ASAP.<br></p><br>
 
 
-                        <strong><span style="margin: 0.5em 0.5em 0 0;clear: both;margin-top: 8px;">
-                        <a style="margin-right: 20px;" target="_blank" href="http://codecanyon.net/downloads"><span class="dashicons dashicons-thumbs-up" style="
-                            text-decoration: none;
-                            font-size: 19px;
-                        "></span> Rate Twist </a>  
+                       
                         
                         <a target="_blank" href="http://codeixer.com/s"><span class="dashicons dashicons-sos" style="
                             text-decoration: none;

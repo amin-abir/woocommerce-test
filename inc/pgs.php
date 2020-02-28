@@ -221,17 +221,17 @@ if ( $attachment_ids && has_post_thumbnail() ) {
 		/**
 		 * Check if Gallery have Video URL
 		 */
-		//$pgs_video = get_post_meta($attachment_id, 'twist_video_url', true); // Twist Video URL
-		//$datatype = 'data-vbtype="video"';
-		//$watermark_class = 'twist-video-thumb';
+		$pgs_video = get_post_meta($attachment_id, 'twist_video_url', true); // Twist Video URL
+		$datatype = 'data-vbtype="video"';
+		$watermark_class = 'twist-video-thumb';
 		$href = 'href';
 
-		// if(empty($pgs_video)) {
+		if(empty($pgs_video)) {
 
-		// 	$pgs_video = $full_size_image[0];
-		// 	$datatype = '';
-		// 	$watermark_class = '';
-		// }
+		$pgs_video = $full_size_image[0];
+			$datatype = '';
+			$watermark_class = '';
+	}
 		if($lightbox == 'false'){
 			$href = 'data-href';
 		}

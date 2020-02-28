@@ -397,44 +397,44 @@ class WeDevs_Settings_API_Test {
                 ),
                 
             ),
-            'twist_advance' => array(
-                array(
-                    'name'    => 'themeco',
-                    'label'   => __( 'Confict Fix', 'twist' ),
-                    'desc'        => __( 'Enable it if you are using Pro & X Theme ', 'twist' ),
-                    'type'    => 'checkbox',
-                    'default' => 'false',
-                    'options' => array(
-                        'true' => 'Yes',
-                        'false'  => 'No'
-                    )
-                ),
-                array(
-                    'name'    => 'layout_broke',
-                    'label'   => __( 'Custom Class', 'twist' ),
-                    'desc'        => __( 'Add Custom class in Div Container', 'twist' ),
-                    'type'    => 'text'
+            // 'twist_advance' => array(
+            //     array(
+            //         'name'    => 'themeco',
+            //         'label'   => __( 'Confict Fix', 'twist' ),
+            //         'desc'        => __( 'Enable it if you are using Pro & X Theme ', 'twist' ),
+            //         'type'    => 'checkbox',
+            //         'default' => 'false',
+            //         'options' => array(
+            //             'true' => 'Yes',
+            //             'false'  => 'No'
+            //         )
+            //     ),
+            //     array(
+            //         'name'    => 'layout_broke',
+            //         'label'   => __( 'Custom Class', 'twist' ),
+            //         'desc'        => __( 'Add Custom class in Div Container', 'twist' ),
+            //         'type'    => 'text'
                     
                     
-                ),
-                // array(
-                //     'name'    => 'layout_pb',
-                //     'label'   => __( 'Custom Single Page', 'twist' ),
-                //     'desc'        => __( 'If you are using Visual composer and use custom single Product page <br>then you can see a new shortcode called "Twist" under WooCommerce tab into VC page Builder.', 'twist' ),
-                //     'type'    => 'checkbox',
-                //     'default' => 'false',
-                //     'options' => array(
-                //         'true' => 'Yes',
-                //         'false'  => 'No'
-                //     )
-                // ),
-                 array(
-                'name' => 'custom_css',
-                'label' => __('Custom Css', 'twist'),
-                'desc' => __('If you need to Override any Style', 'twist'),
-                'type' => 'textarea'
-                ),
-            ),
+            //     ),
+            //     // array(
+            //     //     'name'    => 'layout_pb',
+            //     //     'label'   => __( 'Custom Single Page', 'twist' ),
+            //     //     'desc'        => __( 'If you are using Visual composer and use custom single Product page <br>then you can see a new shortcode called "Twist" under WooCommerce tab into VC page Builder.', 'twist' ),
+            //     //     'type'    => 'checkbox',
+            //     //     'default' => 'false',
+            //     //     'options' => array(
+            //     //         'true' => 'Yes',
+            //     //         'false'  => 'No'
+            //     //     )
+            //     // ),
+            //      array(
+            //     'name' => 'custom_css',
+            //     'label' => __('Custom Css', 'twist'),
+            //     'desc' => __('If you need to Override any Style', 'twist'),
+            //     'type' => 'textarea'
+            //     ),
+            // ),
             'zoom_magify' => array(
 
                 array(

@@ -58,10 +58,7 @@ class WeDevs_Settings_API_Test {
                 'id'    => 'zoom_magify',
                 'title' => __( 'Zoom Options', 'twist' )
             ),
-            // array(
-            //     'id'    => 'twist_advance',
-            //     'title' => __( 'Advance Options', 'twist' )
-            // ),
+            
             array(
                 'id'    => 'wedevs_advanced',
                 'title' => __( ' Twist License Info', 'twist' )

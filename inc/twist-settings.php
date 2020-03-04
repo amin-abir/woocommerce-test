@@ -397,26 +397,7 @@ class WeDevs_Settings_API_Test {
                 ),
                 
             ),
-            // 'twist_advance' => array(
-            //     array(
-            //         'name'    => 'themeco',
-            //         'label'   => __( 'Confict Fix', 'twist' ),
-            //         'desc'        => __( 'Enable it if you are using Pro & X Theme ', 'twist' ),
-            //         'type'    => 'checkbox',
-            //         'default' => 'false',
-            //         'options' => array(
-            //             'true' => 'Yes',
-            //             'false'  => 'No'
-            //         )
-            //     ),
-            //     array(
-            //         'name'    => 'layout_broke',
-            //         'label'   => __( 'Custom Class', 'twist' ),
-            //         'desc'        => __( 'Add Custom class in Div Container', 'twist' ),
-            //         'type'    => 'text'
-                    
-                    
-            //     ),
+            
             //     // array(
             //     //     'name'    => 'layout_pb',
             //     //     'label'   => __( 'Custom Single Page', 'twist' ),

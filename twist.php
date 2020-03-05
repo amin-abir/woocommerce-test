@@ -149,10 +149,7 @@ add_filter( 'attachment_fields_to_save', 'twist_add_video_url_save', 10, 2 );
 // wp_dequeue_script( 'cornerstone-site-body' );
 // }
 
-// $themeco = twist_get_option( 'themeco', 'twist_advance','false');
-// if($themeco == 'true'){
 
-// add_action( 'wp_print_scripts', 'twist_dequeue_script', 100 );
 	
 // }
 

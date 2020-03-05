@@ -2,7 +2,7 @@
 /**
  * Single Product Image
  *
- * This template can be overridden by copying it to yourtheme/woocommerce/single-product/product-image.php.
+ * 
  *
  */
 
@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 global  $woocommerce, $post, $product;
- //fw_print(vp_get_categories());
+ 
 /**
  * Get the value of a settings field
  */
@@ -56,7 +56,7 @@ $lightbox_framewidth = twist_get_option( 'lightbox_framewidth', 'lightbox_option
 
 $zoom_zoom_start = twist_get_option( 'zoom_start', 'zoom_magify','false');
 
-//$twist_advance_layout_broke = twist_get_option( 'layout_broke', 'twist_advance');
+
 $twist_advance_css = twist_get_option( 'custom_css', 'twist_advance','');
 
 

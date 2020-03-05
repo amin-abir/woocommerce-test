@@ -5,7 +5,7 @@
  * Description:       Easily add a carousel to your WooCommerce product gallery.
  * Version:           2.1
  * Author:            codeixer
- * Author URI:        https://codecanyon.net/user/codeixer
+ * Author URI:        https:creotheme.com
  * Text Domain:       twist
  * WC requires at least: 3.6.2
  * WC tested up to: 3.6.2

@@ -138,20 +138,7 @@ function twist_add_video_url_save( $post, $attachment ) {
 add_filter( 'attachment_fields_to_edit', 'twist_add_video_url', 10, 2 );
 add_filter( 'attachment_fields_to_save', 'twist_add_video_url_save', 10, 2 );
 
-/**
-* Dequeue the jQuery UI script.
-*
-* Hooked to the wp_print_scripts action, with a late priority (100),
-* so that it is after the script was enqueued.
-*/
-// function twist_dequeue_script() {
-// wp_dequeue_script( 'cornerstone-site-head' );
-// wp_dequeue_script( 'cornerstone-site-body' );
-// }
 
-
-	
-// }
 
 /**
  * Register the JS & CSS for the public-facing side of the site.

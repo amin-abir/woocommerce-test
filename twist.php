@@ -1,12 +1,12 @@
 <?php
 /**
- * Plugin Name:       Woo Slider
- * Plugin URI:        https://codecanyon.net/item/twist-product-gallery-slidercarousel-plugin-for-woocommerce/14849108
+ * Plugin Name:       Excellent Woocommerce Product Gallery
+ * Plugin URI:        creotheme.com
  * Description:       Easily add a carousel to your WooCommerce product gallery.
- * Version:           2.1
+ * Version:           1.0
  * Author:            codeixer
  * Author URI:        https:creotheme.com
- * Text Domain:       twist
+ * Text Domain:       ewpg-creo
  * WC requires at least: 3.6.2
  * WC tested up to: 3.6.2
  
@@ -20,11 +20,11 @@ if ( ! defined( 'WPINC' ) ) {
  * Check Condition For Woocommerce Active
  */
 	 if ( ! in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) )  ){
-	add_action( 'admin_notices', 'twist_woocommerce_inactive_notice'  );
+	add_action( 'admin_notices', 'epwg_woocommerce_inactive_notice'  );
 	return;
 	}
 	
-	function twist_woocommerce_inactive_notice() {
+	function epwg_woocommerce_inactive_notice() {
 		if ( current_user_can( 'activate_plugins' ) ) :
 			if ( !class_exists( 'WooCommerce' ) ) :
 				?>
@@ -32,7 +32,7 @@ if ( ! defined( 'WPINC' ) ) {
 					<p>
 						<?php
 						printf(
-							__( '<strong><span>Twist required the woocommerce plugin: <em><a href="https://wordpress.org/plugins/woocommerce/" target="_blank">Woocommerce</a></em>.</span></strong>', 'twist' )
+							__( '<strong><span>Excellent woocommerce product gallery required the woocommerce plugin: <em><a href="https://wordpress.org/plugins/woocommerce/" target="_blank">Woocommerce</a></em>.</span></strong>', 'ewpg-creo' )
 							
 						);
 						?>
@@ -45,7 +45,7 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * wc Version Check function
  */
-function twist_version_check( $version = '3.0' ) {
+function ewpg_version_check( $version = '3.0' ) {
 	if ( class_exists( 'WooCommerce' ) ) {
 		global $woocommerce;
 		if ( version_compare( $woocommerce->version, $version, ">=" ) ) {

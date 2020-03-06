@@ -13,8 +13,6 @@ class WeDevs_Settings_API_Test {
 
     function __construct() {
 
-        // $licenseKey=get_option("Twist_lic_Key","");
-        // TwistBase::CheckWPPlugin($licenseKey,$this->licenseMessage,$this->responseObj,__FILE__);
         
         $this->settings_api = new WeDevs_Settings_API;
 

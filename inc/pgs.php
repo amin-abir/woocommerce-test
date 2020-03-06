@@ -78,7 +78,7 @@ if($lightbox == 'true'){
 	$image_title = esc_attr( get_the_title( get_post_thumbnail_id() ) );		
 	$image_link  = wp_get_attachment_url( get_post_thumbnail_id() );
 	$image = get_the_post_thumbnail( $post->ID,'shop_single', array( 'data-tzoom' => $image_link ));
-	//fw_print($image);
+	
 	/**
 	 * Check if Gallery have Video URL
 	 */
@@ -91,7 +91,7 @@ if($lightbox == 'true'){
 		$popup_link = $image_link;
 		$datatype = '';	
 		$watermark_class = '';
-	//	fw_print($popup_link);
+	
 	}
 
 	if($disable_lightbox == 'false'){
@@ -210,7 +210,7 @@ if ( $attachment_ids && has_post_thumbnail() ) {
 				 $lightbox_class,$watermark_class,$image_title,$href,$popup_link,$datatype, $image_thumb ), $post->ID );
 		
 
-	endif; // Lightbox COndtion End
+	endif; // Lightbox Condtion End
 	foreach ( $attachment_ids as $attachment_id ) {
 		$full_size_image = wp_get_attachment_image_src( $attachment_id, 'full' );
 		$thumbnail       = wp_get_attachment_image_src( $attachment_id, 'shop_thumbnail' );

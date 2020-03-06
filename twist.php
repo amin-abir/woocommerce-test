@@ -16,9 +16,6 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-//update_option( 'Twist_lic_Key', 'activated' );
-
-//require_once "inc/TwistBase.php";
 /**
  * Check Condition For Woocommerce Active
  */
@@ -180,27 +177,6 @@ function twist_pgs() {
 	
 }
 
-// $twist_advance_layout_pb = twist_get_option( 'layout_pb', 'twist_advance','false');
-
-// if($twist_advance_layout_pb == 'true'){
-
-// 	add_shortcode( 'twist_vc', 'twist_pgs' );
-// 	add_action( 'vc_before_init', 'twist_vc_map' );
-
-// 	function twist_vc_map() {
-// 	   vc_map( array(
-// 	      "name" => __( "Twist Product Gallery", "twist" ),
-// 	      "base" => "twist_vc",
-// 		  "description" => __("Product Gallery Slider","twist"),
-// 	      "category" => __( "WooCommerce", "twist"),
-	     
-	    
-// 	   ) );
-// 	}
-// }
-
-
-
 
 /**
  * Get the value of a settings field
@@ -226,10 +202,7 @@ function twist_get_option( $option, $section, $default = '' ) {
 
 	class Twist {
         public $plugin_file=__FILE__;
-        // public $responseObj;
-        // public $licenseMessage;
-        // public $showMessage=false;
-        // public $slug="twist";
+       
         function __construct() {
 			//add_action( 'admin_print_styles', [ $this, 'SetAdminStyle' ] );
 			
@@ -247,53 +220,10 @@ function twist_get_option( $option, $section, $default = '' ) {
 						require_once dirname( __FILE__ ) . '/inc/twist-settings.php';
 
 						new WeDevs_Settings_API_Test();
-						
-						
-						
 
-
-    	    // }else{
-    	    //     if(!empty($licenseKey) && !empty($this->licenseMessage)){
-    	    //        $this->showMessage=true;
-            //     }
-    		//     update_option("Twist_lic_Key","") || add_option("Twist_lic_Key","");
-    		//     add_action( 'admin_post_Twist_el_activate_license', [ $this, 'action_activate_license' ] );
-    		//     add_action( 'admin_menu', [$this,'InactiveMenu']);
-    	    // }
+    	    
 				}
 				
-
-    	// function SetAdminStyle() {
-    	// 	wp_register_style( "TwistLic", plugins_url("/inc/style.css",$this->plugin_file),10);
-    	// 	wp_enqueue_style( "TwistLic" );
-    	// }
-        // function ActiveAdminMenu(){
-					
-				
-		// 			add_submenu_page( "woocommerce", "Twist License Info", 'Twist License Info', 'manage_options', $this->slug, [$this,"Activated"] );
-			
-
-        // }
-        // function InactiveMenu() {
-				
-		// 			add_submenu_page( "woocommerce", "Twist Activation", 'Twist Activation', 'manage_options', $this->slug, [$this,"LicenseForm"] );
-
-        // }
-        // function action_activate_license(){
-
-    	//     check_admin_referer( 'el-license' );
-    	//     $licenseKey=!empty($_POST['el_license_key'])?$_POST['el_license_key']:"";
-    	//     update_option("Twist_lic_Key",$licenseKey) || add_option("Twist_lic_Key",$licenseKey);
-    	//     wp_safe_redirect(admin_url( 'admin.php?page='.$this->slug));
-        // }
-        //  function action_deactivate_license() {
-    	//     check_admin_referer( 'el-license' );
-    	//     if(TwistBase::RemoveLicenseKey(__FILE__,$message)){
-    	// 	    update_option("Twist_lic_Key","") || add_option("Twist_lic_Key","");
-    	//     }
-    	//     wp_safe_redirect(admin_url( 'admin.php?page='.$this->slug));
-        // }
-         
 
         
     }

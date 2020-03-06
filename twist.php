@@ -98,27 +98,6 @@ remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_pr
 
 
 /**
- * Save values of Product Video URL fields to media uploader
- *
- * @param $post array, the post data for database
- * @param $attachment array, attachment fields from $_POST form
- * @return $post array, modified post data
- */
-
-// function twist_add_video_url_save( $post, $attachment ) {
-// 	if( isset( $attachment['twist-video-url'] ) )
-// 		update_post_meta( $post['ID'], 'twist_video_url', $attachment['twist-video-url'] );
-
-	
-// 	return $post;
-// }
-
-// add_filter( 'attachment_fields_to_edit', 'twist_add_video_url', 10, 2 );
-// add_filter( 'attachment_fields_to_save', 'twist_add_video_url_save', 10, 2 );
-
-
-
-/**
  * Register the JS & CSS for the public-facing side of the site.
  *
  */

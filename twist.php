@@ -204,7 +204,7 @@ function twist_get_option( $option, $section, $default = '' ) {
         public $plugin_file=__FILE__;
        
         function __construct() {
-			//add_action( 'admin_print_styles', [ $this, 'SetAdminStyle' ] );
+			
 			
     	    // $licenseKey=get_option("Twist_lic_Key","");
     	    // if(TwistBase::CheckWPPlugin($licenseKey,$this->licenseMessage,$this->responseObj,__FILE__)){

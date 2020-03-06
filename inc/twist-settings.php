@@ -42,7 +42,7 @@ class WeDevs_Settings_API_Test {
         $sections = array(
             array(
                 'id'    => 'genaral_options',
-                'title' => __( 'General Options', 'twist' )
+                'title' => __( 'General Settings', 'twist' )
             ),
             array(
                 'id'    => 'single_options',
@@ -396,24 +396,6 @@ class WeDevs_Settings_API_Test {
                 
             ),
             
-            //     // array(
-            //     //     'name'    => 'layout_pb',
-            //     //     'label'   => __( 'Custom Single Page', 'twist' ),
-            //     //     'desc'        => __( 'If you are using Visual composer and use custom single Product page <br>then you can see a new shortcode called "Twist" under WooCommerce tab into VC page Builder.', 'twist' ),
-            //     //     'type'    => 'checkbox',
-            //     //     'default' => 'false',
-            //     //     'options' => array(
-            //     //         'true' => 'Yes',
-            //     //         'false'  => 'No'
-            //     //     )
-            //     // ),
-            //      array(
-            //     'name' => 'custom_css',
-            //     'label' => __('Custom Css', 'twist'),
-            //     'desc' => __('If you need to Override any Style', 'twist'),
-            //     'type' => 'textarea'
-            //     ),
-            // ),
             'zoom_magify' => array(
 
                 array(

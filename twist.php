@@ -60,11 +60,11 @@ function ewpg_version_check( $version = '3.0' ) {
  * Woocommerce actions
  */
 
-add_action( 'after_setup_theme', 'remove_twist_support' );
+add_action( 'after_setup_theme', 'remove_ewpg_support' );
 
 // Remove default support > woocommerce 3.0 = >
 
-function remove_twist_support() {
+function remove_ewpg_support() {
 
 $zoom_zoom_start = twist_get_option( 'zoom_start', 'zoom_magify'); // Setting api Zoom Option
 
@@ -95,26 +95,7 @@ remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_pr
 
 }
 
-/**
- * Add Product Video URL fields to media uploader
- *
- * @param $form_fields array, fields to include in attachment form
- * @param $post object, attachment record in database
- * @return $form_fields, modified form fields
- */
- 
-function twist_add_video_url( $form_fields, $post ) {
-	$form_fields['twist-video-url'] = array(
-		'label' => 'Video URL',
-		'input' => 'text',
-		'value' => get_post_meta( $post->ID, 'twist_video_url', true ),
-		'helps' => 'Twist Product Video URL',
-	);
 
-	
-
-	return $form_fields;
-}
 
 /**
  * Save values of Product Video URL fields to media uploader
@@ -124,16 +105,16 @@ function twist_add_video_url( $form_fields, $post ) {
  * @return $post array, modified post data
  */
 
-function twist_add_video_url_save( $post, $attachment ) {
-	if( isset( $attachment['twist-video-url'] ) )
-		update_post_meta( $post['ID'], 'twist_video_url', $attachment['twist-video-url'] );
+// function twist_add_video_url_save( $post, $attachment ) {
+// 	if( isset( $attachment['twist-video-url'] ) )
+// 		update_post_meta( $post['ID'], 'twist_video_url', $attachment['twist-video-url'] );
 
 	
-	return $post;
-}
+// 	return $post;
+// }
 
-add_filter( 'attachment_fields_to_edit', 'twist_add_video_url', 10, 2 );
-add_filter( 'attachment_fields_to_save', 'twist_add_video_url_save', 10, 2 );
+// add_filter( 'attachment_fields_to_edit', 'twist_add_video_url', 10, 2 );
+// add_filter( 'attachment_fields_to_save', 'twist_add_video_url_save', 10, 2 );
 
 
 

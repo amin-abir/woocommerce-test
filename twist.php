@@ -205,9 +205,6 @@ function twist_get_option( $option, $section, $default = '' ) {
        
         function __construct() {
 			
-    	    // if(TwistBase::CheckWPPlugin($licenseKey,$this->licenseMessage,$this->responseObj,__FILE__)){
-						
-    		//     add_action( 'admin_post_Twist_el_deactivate_license', [ $this, 'action_deactivate_license' ] );
     		    //$this->licenselMessage=$this->mess;
 						//Write you plugin's code here
 						/**

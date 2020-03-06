@@ -204,9 +204,6 @@ function twist_get_option( $option, $section, $default = '' ) {
         public $plugin_file=__FILE__;
        
         function __construct() {
-			
-    		    //$this->licenselMessage=$this->mess;
-						//Write you plugin's code here
 						/**
 						 * Setting Options
 						 * # https://github.com/tareq1988/wordpress-settings-api-class
@@ -215,11 +212,8 @@ function twist_get_option( $option, $section, $default = '' ) {
 						require_once dirname( __FILE__ ) . '/inc/twist-settings.php';
 
 						new WeDevs_Settings_API_Test();
-
     	    
 				}
-				
-
         
     }
 

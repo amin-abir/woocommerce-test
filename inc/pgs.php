@@ -82,17 +82,17 @@ if($lightbox == 'true'){
 	/**
 	 * Check if Gallery have Video URL
 	 */
-	$popup_link = get_post_meta(get_post_thumbnail_id(), 'twist_video_url', true);
-	$datatype = 'data-vbtype="video"';
-	$watermark_class = 'twist-video-thumb';
+	// $popup_link = get_post_meta(get_post_thumbnail_id(), 'twist_video_url', true);
+	// $datatype = 'data-vbtype="video"';
+	// $watermark_class = 'twist-video-thumb';
 
-	if(empty($popup_link)) {
+	// if(empty($popup_link)) {
 
-		$popup_link = $image_link;
-		$datatype = '';	
-		$watermark_class = '';
+	// 	$popup_link = $image_link;
+	// 	$datatype = '';	
+	// 	$watermark_class = '';
 	
-	}
+	// }
 
 	if($disable_lightbox == 'false'){
 

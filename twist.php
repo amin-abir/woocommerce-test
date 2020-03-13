@@ -20,11 +20,11 @@ if ( ! defined( 'WPINC' ) ) {
  * Check Condition For Woocommerce Active
  */
 	 if ( ! in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) )  ){
-	add_action( 'admin_notices', 'epwg_woocommerce_inactive_notice'  );
+	add_action( 'admin_notices', 'ewpg_woocommerce_inactive_notice'  );
 	return;
 	}
 	
-	function epwg_woocommerce_inactive_notice() {
+	function ewpg_woocommerce_inactive_notice() {
 		if ( current_user_can( 'activate_plugins' ) ) :
 			if ( !class_exists( 'WooCommerce' ) ) :
 				?>
@@ -91,8 +91,6 @@ function after_woo_hooks() {
 //remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_show_product_loop_sale_flash', 10 );
 remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10 );
 
-
-
 }
 
 
@@ -101,7 +99,7 @@ remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_pr
  * Register the JS & CSS for the public-facing side of the site.
  *
  */
-	function twist_enqueue_files() {
+	function ewpg_enqueue_files() {
 		if(is_product()){
 
 		wp_enqueue_script( 'slick-js', plugin_dir_url( __FILE__ ) . 'assets/slick.min.js', array( 'jquery' ),'1.3', false );
@@ -115,7 +113,7 @@ remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_pr
 		}
 	
 	
-add_action( 'wp_enqueue_scripts','twist_enqueue_files' );
+add_action( 'wp_enqueue_scripts','ewpg_enqueue_files' );
 
 
 

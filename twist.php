@@ -120,18 +120,12 @@ add_action( 'wp_enqueue_scripts','ewpg_enqueue_files' );
 
 function ewpg_pgs() {
 
-	$twist_advance_layout_pb = twist_get_option( 'layout_pb', 'twist_advance','false');
+	//$twist_advance_layout_pb = twist_get_option( 'layout_pb', 'twist_advance','false');
 
-	if($twist_advance_layout_pb == 'false'){
-		require_once dirname( __FILE__ ) . '/inc/pgs.php';
-	}
-	else{
-		ob_start();
-		require_once dirname( __FILE__ ) . '/inc/pgs.php';
-		$output = ob_get_clean();
-		return $output;
-	}
 
+		require_once dirname( __FILE__ ) . '/inc/pgs.php';
+
+	
 	
 }
 

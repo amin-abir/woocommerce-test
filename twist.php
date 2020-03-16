@@ -157,7 +157,7 @@ function twist_get_option( $option, $section, $default = '' ) {
 						 * # https://github.com/tareq1988/wordpress-settings-api-class
 						 */
 						require_once dirname( __FILE__ ) . '/inc/class.settings-api.php';
-						require_once dirname( __FILE__ ) . '/inc/twist-settings.php';
+						require_once dirname( __FILE__ ) . '/inc/ewpg-settings.php';
 
 						new WeDevs_Settings_API_Test();
     	    

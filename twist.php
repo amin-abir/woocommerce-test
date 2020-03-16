@@ -8,7 +8,7 @@
  * Author URI:        https:creotheme.com
  * Text Domain:       ewpg-creo
  * WC requires at least: 3.6.2
- * WC tested up to: 3.6.2
+ * WC tested up to: 4.0
  
  */
 // If this file is called directly, abort.

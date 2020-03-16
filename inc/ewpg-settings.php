@@ -9,7 +9,7 @@ if ( !class_exists('WeDevs_Settings_API_Test' ) ):
 class WeDevs_Settings_API_Test {
 
     private $settings_api;
-    //public $responseObj;
+  
 
     function __construct() {
 
@@ -31,8 +31,13 @@ class WeDevs_Settings_API_Test {
     }
 
     function admin_menu() {
-        add_submenu_page( 
-            'woocommerce', 'Twist Settings', 'Twist Settings', 'manage_options', 'twist', array(&$this, 'plugin_page')
+        add_menu_page( 
+             'EWPG Settings',
+              'EWPG Settings',
+               'manage_options',
+                'ewpg-settings', 
+                array(&$this, 'plugin_page'),
+                'dashicons-chart-pie'
         );
     }
        

@@ -148,7 +148,7 @@ function twist_get_option( $option, $section, $default = '' ) {
 
 
 
-	class Twist {
+	class EWPG_Settings {
         public $plugin_file=__FILE__;
        
         function __construct() {
@@ -165,4 +165,4 @@ function twist_get_option( $option, $section, $default = '' ) {
         
     }
 
-    new Twist();
+    new EWPG_Settings();

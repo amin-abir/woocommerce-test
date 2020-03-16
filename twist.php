@@ -4,7 +4,7 @@
  * Plugin URI:        creotheme.com
  * Description:       Easily add a carousel to your WooCommerce product gallery.
  * Version:           1.0
- * Author:            codeixer
+ * Author:            creotheme
  * Author URI:        https:creotheme.com
  * Text Domain:       ewpg-creo
  * WC requires at least: 3.6.2

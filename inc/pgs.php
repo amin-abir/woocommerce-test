@@ -94,6 +94,7 @@ if($lightbox == 'true'){
 	
 	// }
 
+
 	if($disable_lightbox == 'false'){
 
 	echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '
@@ -110,6 +111,7 @@ if($lightbox == 'true'){
 				</div>',
 				$watermark_class, $image_title, $image ), $post->ID );
 	}
+		
 
 	if($lightbox == 'false') : // Setting lightbox Condition
 			if ( $woocommerce->version >= '3.0' ){
@@ -129,15 +131,15 @@ if($lightbox == 'true'){
 				/**
 				 * Check if Gallery have Video URL
 				 */
-				$pgs_video = get_post_meta($attachment_id, 'twist_video_url', true); // Twist Video URL
-				$datatype = 'data-vbtype="video"';
-				$watermark_class = 'twist-video-thumb';
-				if(empty($pgs_video)) {
+				// $pgs_video = get_post_meta($attachment_id, 'twist_video_url', true); // Twist Video URL
+				// $datatype = 'data-vbtype="video"';
+				// $watermark_class = 'twist-video-thumb';
+				// if(empty($pgs_video)) {
 
-					$pgs_video = $full_size_image[0];
-					$datatype = '';
-					$watermark_class = '';
-				}	
+				// 	$pgs_video = $full_size_image[0];
+				// 	$datatype = '';
+				// 	$watermark_class = '';
+				// }	
 			 		if($disable_lightbox == 'false'){
 							echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '
 							<div>

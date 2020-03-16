@@ -175,13 +175,7 @@ class WeDevs_Settings_API_Test {
                     'default' => '5000',
                     
                 ),
-                array(
-                    'name'    => 'video_icon_color',
-                    'label'   => __( 'Video Icon Color', 'twist' ),
-                    
-                    'type'    => 'color',
-                    'default' => '#e54634'
-                ),
+                
                 array(
                     'name'    => 'nav_icon_color',
                     'label'   => __( 'Navigation Icon Color', 'twist' ),

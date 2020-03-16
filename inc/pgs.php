@@ -24,7 +24,7 @@ $dragging = twist_get_option( 'dragging', 'genaral_options', 'false');
 $rtl = twist_get_option( 'rtl', 'genaral_options', 'false');
 $autoplay = twist_get_option( 'autoplay', 'genaral_options', 'false');
 $autoplaySpeed = twist_get_option( 'autoplaySpeed', 'genaral_options', '3000');
-$video_icon_color = twist_get_option( 'video_icon_color', 'genaral_options','#e54634');
+//$video_icon_color = twist_get_option( 'video_icon_color', 'genaral_options','#e54634');
 $nav_icon_color = twist_get_option( 'nav_icon_color', 'genaral_options','#fff');
 $nav_bg_color = twist_get_option( 'nav_bg_color', 'genaral_options','#000');
 

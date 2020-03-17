@@ -66,7 +66,7 @@ add_action( 'after_setup_theme', 'remove_ewpg_support' );
 
 function remove_ewpg_support() {
 
-$zoom_zoom_start = twist_get_option( 'zoom_start', 'zoom_magify'); // Setting api Zoom Option
+$zoom_zoom_start = ewpg_get_option( 'zoom_start', 'zoom_magify'); // Setting api Zoom Option
 
 if($zoom_zoom_start == 'false') :
 	remove_theme_support( 'wc-product-gallery-zoom' );
@@ -136,7 +136,7 @@ function ewpg_display() {
  * 
  * @return mixed
  */
-function twist_get_option( $option, $section, $default = '' ) {
+function ewpg_get_option( $option, $section, $default = '' ) {
 
     $options = get_option( $section );
 

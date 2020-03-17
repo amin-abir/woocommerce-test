@@ -15,48 +15,48 @@ global  $woocommerce, $post, $product;
 /**
  * Get the value of a settings field
  */
-$layout = twist_get_option( 'layout', 'genaral_options', 'horizontal');
-$lightbox = twist_get_option( 'lightbox', 'genaral_options', 'false');
-$thum2show = twist_get_option( 'thum2show', 'genaral_options', '4');
-$thumscrollby = twist_get_option( 'thumscrollby', 'genaral_options', '3');
-$infinite = twist_get_option( 'infinite', 'genaral_options', 'false');
-$dragging = twist_get_option( 'dragging', 'genaral_options', 'false');
-$rtl = twist_get_option( 'rtl', 'genaral_options', 'false');
-$autoplay = twist_get_option( 'autoplay', 'genaral_options', 'false');
-$autoplaySpeed = twist_get_option( 'autoplaySpeed', 'genaral_options', '3000');
-$nav_icon_color = twist_get_option( 'nav_icon_color', 'genaral_options','#fff');
-$nav_bg_color = twist_get_option( 'nav_bg_color', 'genaral_options','#000');
+$layout = ewpg_get_option( 'layout', 'genaral_options', 'horizontal');
+$lightbox = ewpg_get_option( 'lightbox', 'genaral_options', 'false');
+$thum2show = ewpg_get_option( 'thum2show', 'genaral_options', '4');
+$thumscrollby = ewpg_get_option( 'thumscrollby', 'genaral_options', '3');
+$infinite = ewpg_get_option( 'infinite', 'genaral_options', 'false');
+$dragging = ewpg_get_option( 'dragging', 'genaral_options', 'false');
+$rtl = ewpg_get_option( 'rtl', 'genaral_options', 'false');
+$autoplay = ewpg_get_option( 'autoplay', 'genaral_options', 'false');
+$autoplaySpeed = ewpg_get_option( 'autoplaySpeed', 'genaral_options', '3000');
+$nav_icon_color = ewpg_get_option( 'nav_icon_color', 'genaral_options','#fff');
+$nav_bg_color = ewpg_get_option( 'nav_bg_color', 'genaral_options','#000');
 
 
-$single_hide_thumb = twist_get_option( 'hide_thumb', 'single_options','false');
-$single_hide_nav = twist_get_option( 'hide_nav', 'single_options','true');
-$single_fade = twist_get_option( 'fade', 'single_options','false');
-$single_swipe = twist_get_option( 'swipe', 'single_options','true');
-$resize_height = twist_get_option( 'resize_height', 'single_options','false');
-$single_dots = twist_get_option( 'dots', 'single_options','false');
-$single_hide_gallery = twist_get_option( 'hide_gallery', 'single_options','false');
-$single_autoplaySpeed = twist_get_option( 'autoplaySpeed', 'single_options', '5000');
+$single_hide_thumb = ewpg_get_option( 'hide_thumb', 'single_options','false');
+$single_hide_nav = ewpg_get_option( 'hide_nav', 'single_options','true');
+$single_fade = ewpg_get_option( 'fade', 'single_options','false');
+$single_swipe = ewpg_get_option( 'swipe', 'single_options','true');
+$resize_height = ewpg_get_option( 'resize_height', 'single_options','false');
+$single_dots = ewpg_get_option( 'dots', 'single_options','false');
+$single_hide_gallery = ewpg_get_option( 'hide_gallery', 'single_options','false');
+$single_autoplaySpeed = ewpg_get_option( 'autoplaySpeed', 'single_options', '5000');
 
 
-$disable_lightbox = twist_get_option( 'disable_lightbox', 'lightbox_options','false');
-$lightbox_arrowsColor = twist_get_option( 'arrowsColor', 'lightbox_options','#fff');
-$lightbox_bgcolor = twist_get_option( 'bgcolor', 'lightbox_options','#fff');
-$lightbox_borderwidth = twist_get_option( 'borderwidth', 'lightbox_options','5');
-$lightbox_spinColor = twist_get_option( 'spinColor', 'lightbox_options','#fff');
-$lightbox_spinner = twist_get_option( 'spinner1', 'lightbox_options','double-bounce');
-$lightbox_autoplay_videos = twist_get_option( 'autoplay_videos', 'lightbox_options','true');
-$lightbox_numeratio = twist_get_option( 'numeratio', 'lightbox_options','true');
-$lightbox_titlePosition = twist_get_option( 'titlePosition', 'lightbox_options','bottom');
-$lightbox_titleBackground = twist_get_option( 'titleBackground', 'lightbox_options','#000000');
-$lightbox_titleColor = twist_get_option( 'titleColor', 'lightbox_options','#fff');
-$lightbox_infinite = twist_get_option( 'lightbox_infinite', 'lightbox_options','false');
-$lightbox_framewidth = twist_get_option( 'lightbox_framewidth', 'lightbox_options','1024');
+$disable_lightbox = ewpg_get_option( 'disable_lightbox', 'lightbox_options','false');
+$lightbox_arrowsColor = ewpg_get_option( 'arrowsColor', 'lightbox_options','#fff');
+$lightbox_bgcolor = ewpg_get_option( 'bgcolor', 'lightbox_options','#fff');
+$lightbox_borderwidth = ewpg_get_option( 'borderwidth', 'lightbox_options','5');
+$lightbox_spinColor = ewpg_get_option( 'spinColor', 'lightbox_options','#fff');
+$lightbox_spinner = ewpg_get_option( 'spinner1', 'lightbox_options','double-bounce');
+$lightbox_autoplay_videos = ewpg_get_option( 'autoplay_videos', 'lightbox_options','true');
+$lightbox_numeratio = ewpg_get_option( 'numeratio', 'lightbox_options','true');
+$lightbox_titlePosition = ewpg_get_option( 'titlePosition', 'lightbox_options','bottom');
+$lightbox_titleBackground = ewpg_get_option( 'titleBackground', 'lightbox_options','#000000');
+$lightbox_titleColor = ewpg_get_option( 'titleColor', 'lightbox_options','#fff');
+$lightbox_infinite = ewpg_get_option( 'lightbox_infinite', 'lightbox_options','false');
+$lightbox_framewidth = ewpg_get_option( 'lightbox_framewidth', 'lightbox_options','1024');
 
 
-$zoom_zoom_start = twist_get_option( 'zoom_start', 'zoom_magify','false');
+$zoom_zoom_start = ewpg_get_option( 'zoom_start', 'zoom_magify','false');
 
 
-$twist_advance_css = twist_get_option( 'custom_css', 'twist_advance','');
+$twist_advance_css = ewpg_get_option( 'custom_css', 'twist_advance','');
 
 
 $lightbox_class = '';
@@ -119,7 +119,7 @@ if($lightbox == 'true'){
 							<div>
 								<a class="venobox %s" href="%s" %s data-title="%s" data-gall="pgs-thumbs" ><img data-lazy="%s" data-tzoom="%s" ></a>
 							</div>',
-							$watermark_class,$pgs_video,$datatype, $title, $shop_single_img[0],$full_size_image[0]  ), $attachment_id );
+							$watermark_class,$ewpg_set,$datatype, $title, $shop_single_img[0],$full_size_image[0]  ), $attachment_id );
 					 }
 					 else{
 						 
@@ -193,28 +193,13 @@ if ( $attachment_ids && has_post_thumbnail() ) {
 		$title           = get_post_field( 'post_title', $attachment_id );
 
 		
- 		
-		/**
-		 * Check if Gallery have Video URL
-		 */
-		$pgs_video = get_post_meta($attachment_id, 'twist_video_url', true); // Twist Video URL
-		$datatype = 'data-vbtype="video"';
-		$watermark_class = 'twist-video-thumb';
-		$href = 'href';
-
-		if(empty($pgs_video)) {
-
-		$pgs_video = $full_size_image[0];
-			$datatype = '';
-			$watermark_class = '';
-	}
 		if($lightbox == 'false'){
 			$href = 'data-href';
 		}
 
 		echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', sprintf( '
 				<div><a class="%s %s" data-title="%s" data-gall="pgs-thumbs" %s="%s" %s><img src="%s"></a></div>',
-				 $lightbox_class,$watermark_class,$title,$href,$pgs_video,$datatype, $thumbnail[0] ), $attachment_id );
+				 $lightbox_class,$watermark_class,$title,$href,$ewpg_set,$datatype, $thumbnail[0] ), $attachment_id );
 	}
 	
 }

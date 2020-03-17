@@ -128,3 +128,17 @@ div#wedevs_advanced .twist-admin,.deactive_license, #wedevs_advanced h2, #wedevs
 .el-license-container.shoe-data-lic {
     display: none;
 }
+
+
+.ewpg-check{
+  border: 1px solid #f75757!important;
+  border-radius: 30px;
+}
+
+.betterdocs-settings-field[type="checkbox"] {
+  padding: 14px !important;
+  border: 1px solid #9b9d9d;
+  background-color: #fff;
+  box-shadow: none !important;
+  border-radius: 2px;
+}

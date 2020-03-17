@@ -106,7 +106,7 @@ remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_pr
 		wp_enqueue_script( 'venobox-js', plugin_dir_url( __FILE__ ) . 'assets/venobox.min.js', array( 'jquery' ),'1.3', false );
 
 		wp_enqueue_style( 'dashicons');
-		wp_enqueue_style( 'slick-twist', plugin_dir_url( __FILE__ ) . 'assets/slick-theme.css', array(),  '1.3' );
+		wp_enqueue_style( 'slick-slider', plugin_dir_url( __FILE__ ) . 'assets/slick-theme.css', array(),  '1.3' );
 			
 		wp_enqueue_style( 'ewpg-style', plugin_dir_url( __FILE__ ) . 'assets/ewpg-style.css', array(),  '1.0' );
 		}

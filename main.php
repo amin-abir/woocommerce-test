@@ -66,7 +66,7 @@ add_action( 'after_setup_theme', 'remove_ewpg_support' );
 
 function remove_ewpg_support() {
 
-$zoom_zoom_start = twist_get_option( 'zoom_start', 'zoom_magify'); // Setting api Zoom Option
+$zoom_zoom_start = ewpg_get_option( 'zoom_start', 'zoom_magify'); // Setting api Zoom Option
 
 if($zoom_zoom_start == 'false') :
 	remove_theme_support( 'wc-product-gallery-zoom' );
@@ -86,7 +86,7 @@ function after_woo_hooks() {
 	
  remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20 );
 
- add_action( 'woocommerce_before_single_product_summary', 'ewpg_pgs', 20 );
+ add_action( 'woocommerce_before_single_product_summary', 'ewpg_display', 20 );
  
 
 remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10 );
@@ -119,9 +119,9 @@ add_action( 'wp_enqueue_scripts','ewpg_enqueue_files' );
 
 
 
-function ewpg_pgs() {
+function ewpg_display() {
 
-		require_once dirname( __FILE__ ) . '/inc/pgs.php';
+		require_once dirname( __FILE__ ) . '/inc/ewpg-display.php';
 
 	
 }
@@ -136,7 +136,7 @@ function ewpg_pgs() {
  * 
  * @return mixed
  */
-function twist_get_option( $option, $section, $default = '' ) {
+function ewpg_get_option( $option, $section, $default = '' ) {
 
     $options = get_option( $section );
 

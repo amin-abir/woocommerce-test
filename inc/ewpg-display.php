@@ -78,20 +78,6 @@ if($lightbox == 'true'){
 	$image_link  = wp_get_attachment_url( get_post_thumbnail_id() );
 	$image = get_the_post_thumbnail( $post->ID,'shop_single', array( 'data-tzoom' => $image_link ));
 	
-	/**
-	 * Check if Gallery have Video URL
-	 */
-	// $popup_link = get_post_meta(get_post_thumbnail_id(), 'twist_video_url', true);
-	// $datatype = 'data-vbtype="video"';
-	// $watermark_class = 'twist-video-thumb';
-
-	// if(empty($popup_link)) {
-
-	// 	$popup_link = $image_link;
-	// 	$datatype = '';	
-	// 	$watermark_class = '';
-	
-	// }
 
 
 	if($disable_lightbox == 'false'){
@@ -127,18 +113,7 @@ if($lightbox == 'true'){
 					$shop_single_img       = wp_get_attachment_image_src( $attachment_id, 'shop_single' );
 					$title           = get_post_field( 'post_title', $attachment_id );
 
-				/**
-				 * Check if Gallery have Video URL
-				 */
-				// $pgs_video = get_post_meta($attachment_id, 'twist_video_url', true); // Twist Video URL
-				// $datatype = 'data-vbtype="video"';
-				// $watermark_class = 'twist-video-thumb';
-				// if(empty($pgs_video)) {
-
-				// 	$pgs_video = $full_size_image[0];
-				// 	$datatype = '';
-				// 	$watermark_class = '';
-				// }	
+					
 			 		if($disable_lightbox == 'false'){
 							echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '
 							<div>

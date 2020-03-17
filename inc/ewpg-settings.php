@@ -47,24 +47,24 @@ class WeDevs_Settings_API_Test {
         $sections = array(
             array(
                 'id'    => 'genaral_options',
-                'title' => __( 'General Settings', 'twist' )
+                'title' => __( 'Gallery Settings', 'ewpg-creo' )
             ),
             array(
                 'id'    => 'single_options',
-                'title' => __( 'Feature Image Options', 'twist' )
+                'title' => __( 'Feature Image Options', 'ewpg-creo' )
             ),
             array(
                 'id'    => 'lightbox_options',
-                'title' => __( 'LightBox Options', 'twist' )
+                'title' => __( 'LightBox Options', 'ewpg-creo' )
             ),
             array(
                 'id'    => 'zoom_magify',
-                'title' => __( 'Zoom Options', 'twist' )
+                'title' => __( 'Zoom Options', 'ewpg-creo' )
             ),
             
             array(
                 'id'    => 'wedevs_advanced',
-                'title' => __( ' Twist License Info', 'twist' )
+                'title' => __( ' Twist License Info', 'ewpg-creo' )
             )
         );
         return $sections;

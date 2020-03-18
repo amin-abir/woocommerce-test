@@ -231,8 +231,8 @@ class WeDevs_Settings_API_Test {
                 ),
                 array(
                     'name'    => 'dots',
-                    'label'   => __( 'Dots', 'twist' ),
-                    'desc'    => __( 'Note: This option will not work if "LightBox For Gallery" Trun on under the "General options" Tab', 'twist' ),
+                    'label'   => __( 'Dots', 'ewpg-creo' ),
+                    'desc'    => __( 'Note: This option will not work if "LightBox For Gallery" Trun on under the "General options" Tab', 'ewpg-creo' ),
                     'type'    => 'checkbox',
                     'default' => 'false',
                     'options' => array(
@@ -242,8 +242,8 @@ class WeDevs_Settings_API_Test {
                 ),
                 array(
                     'name'    => 'resize_height',
-                    'label'   => __( 'Resize Height', 'twist' ),
-                    'desc'    => __( 'If you Gallery has multiple Image size, you need to Enable it for avoid White space Under the gallery', 'twist' ),
+                    'label'   => __( 'Resize Height', 'ewpg-creo' ),
+                    'desc'    => __( 'If you Gallery has multiple Image size, you need to Enable it for avoid White space Under the gallery', 'ewpg-creo' ),
                     'type'    => 'checkbox',
                     'default' => 'false',
                     'options' => array(
@@ -253,7 +253,7 @@ class WeDevs_Settings_API_Test {
                 ),
                 array(
                     'name'    => 'hide_gallery',
-                    'label'   => __( 'Hide Thumbnails', 'twist' ),
+                    'label'   => __( 'Hide Thumbnails', 'ewpg-creo' ),
                     
                     'type'    => 'checkbox',
                     'default' => 'false',
@@ -270,7 +270,7 @@ class WeDevs_Settings_API_Test {
             'lightbox_options' => array(
                 array(
                     'name'    => 'disable_lightbox',
-                    'label'   => __( 'Disable Lightbox', 'twist' ),
+                    'label'   => __( 'Disable Lightbox', 'ewpg-creo' ),
                     'desc' => 'Enable it for Disable Lightbox.<br/> Note: below options are not working if this option is Enable.',
                     'type'    => 'checkbox',
                     'default' => 'false',
@@ -281,22 +281,22 @@ class WeDevs_Settings_API_Test {
                 ),
                 array(
                     'name'    => 'arrowsColor',
-                    'label'   => __( 'Navigation Arrows Color', 'twist' ),
+                    'label'   => __( 'Navigation Arrows Color', 'ewpg-creo' ),
                     
                     'type'    => 'color',
                     'default' => '#fff'
                 ),
                 array(
                     'name'    => 'bgcolor',
-                    'label'   => __( 'Image Border Color', 'twist' ),
+                    'label'   => __( 'Image Border Color', 'ewpg-creo' ),
                     
                     'type'    => 'color',
                     'default' => '#fff'
                 ),
                 array(
                     'name'    => 'lightbox_framewidth',
-                    'label'   => __( 'Image Frame Width', 'twist' ),
-                    'desc'              => __( 'If the Lightbox image is not Fit to the Screen than you can use this option. <br>Default: 800(in Pixel)', 'twist' ),
+                    'label'   => __( 'Image Frame Width', 'ewpg-creo' ),
+                    'desc'              => __( 'If the Lightbox image is not Fit to the Screen than you can use this option. <br>Default: 800(in Pixel)', 'ewpg-creo' ),
                     'type'    => 'number',
                     'default' => '800',
                     

@@ -153,10 +153,7 @@ function ewpg_get_option( $option, $section, $default = '' ) {
         public $plugin_file=__FILE__;
        
         function __construct() {
-						/**
-						 * Setting Options
-						 * # https://github.com/tareq1988/wordpress-settings-api-class
-						 */
+						
 						require_once dirname( __FILE__ ) . '/inc/class.settings-api.php';
 						require_once dirname( __FILE__ ) . '/inc/ewpg-settings.php';
 

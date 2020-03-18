@@ -80,10 +80,10 @@ class WeDevs_Settings_API_Test {
             'genaral_options' => array(
                 array(
                     'name'    => 'layout',
-                    'label'   => __( 'Gallery Layout', 'twist' ),
+                    'label'   => __( 'Gallery Layout', 'ewpg-creo' ),
                     
                     'type'    => 'select',
-                    'default' => 'horizontal',
+                    'default' => 'vertical',
                     'options' => array(
                         'vertical' => 'Vertical Left',
                         'vertical_r' => 'Vertical Right',
@@ -92,16 +92,17 @@ class WeDevs_Settings_API_Test {
                 ),
                  array(
                     'name'              => 'thum2show',
-                    'label'             => __( 'Thumbnails To Show', 'twist' ),
+                    'label'             => __( 'Thumbnails To Show', 'ewpg-creo' ),
                     'type'              => 'number',
+                    'desc'  => __('Number of thumbails to show in gallery','ewpg-creo'),
                     'default'           => '4',
                     'sanitize_callback' => 'sanitize_text_field'
                 ),
 
                  array(
                     'name'              => 'thumscrollby',
-                    'label'             => __( 'Thumbnails Scroll By', 'twist' ),
-                    'desc'  => __('Note: You can set the number of thumbails for scrolling when arrows are clicked','twist'),
+                    'label'             => __( 'Thumbnails Scroll By', 'ewpg-creo' ),
+                    'desc'  => __('Number of thumbails for scrolling when arrows are clicked','ewpg-creo'),
                     'type'              => 'number',
                     'default'           => '3',
                     'sanitize_callback' => 'sanitize_text_field'
@@ -110,7 +111,7 @@ class WeDevs_Settings_API_Test {
                
                 array(
                     'name'    => 'lightbox',
-                    'label'   => __( 'LightBox For Thumbnails', 'twist' ),
+                    'label'   => __( 'LightBox For Thumbnails', 'ewpg-creo' ),
                     
                     'type'    => 'checkbox',
                     'default' => 'false',
@@ -122,7 +123,7 @@ class WeDevs_Settings_API_Test {
                
                 array(
                     'name'    => 'infinite',
-                    'label'   => __( 'Infinite', 'twist' ),
+                    'label'   => __( 'Infinite', 'ewpg-creo' ),
                     
                     'type'    => 'checkbox',
                     'default' => 'false',
@@ -133,7 +134,7 @@ class WeDevs_Settings_API_Test {
                 ),
                 array(
                     'name'    => 'dragging',
-                    'label'   => __( 'Mouse Dragging', 'twist' ),
+                    'label'   => __( 'Mouse Dragging', 'ewpg-creo' ),
                    
                     'type'    => 'checkbox',
                     'default' => 'false',
@@ -144,7 +145,7 @@ class WeDevs_Settings_API_Test {
                 ),
                 array(
                     'name'    => 'rtl',
-                    'label'   => __( 'RTL Mode', 'twist' ),
+                    'label'   => __( 'RTL Mode', 'ewpg-creo' ),
                     
                     'type'    => 'checkbox',
                     'default' => 'false',
@@ -156,8 +157,8 @@ class WeDevs_Settings_API_Test {
                 
                 array(
                     'name'    => 'autoplay',
-                    'label'   => __( 'Autoplay', 'twist' ),
-                    'desc'  => __('Note: This option will not work if "LightBox For Gallery" Trun on','twist'),
+                    'label'   => __( 'Autoplay', 'ewpg-creo' ),
+                    'desc'  => __('Autoplay will not work if lightbox for thumbnail is enabled','ewpg-creo'),
                     'type'    => 'checkbox',
                     
                     'default' => 'false',
@@ -169,23 +170,23 @@ class WeDevs_Settings_API_Test {
                
                 array(
                     'name'    => 'autoplaySpeed',
-                    'label'   => __( 'AutoPlay Timeout', 'twist' ),
-                    'desc'              => __( '1000 = 1 Sec', 'twist' ),
+                    'label'   => __( 'AutoPlay Timeout', 'ewpg-creo' ),
+                    'desc'              => __( '1000 = 1 Sec', 'ewpg-creo' ),
                     'type'    => 'text',
-                    'default' => '5000',
+                    'default' => '4000',
                     
                 ),
                 
                 array(
                     'name'    => 'nav_icon_color',
-                    'label'   => __( 'Navigation Icon Color', 'twist' ),
+                    'label'   => __( 'Navigation Icon Color', 'ewpg-creo' ),
                     
                     'type'    => 'color',
                     'default' => '#fff'
                 ),
                 array(
                     'name'    => 'nav_bg_color',
-                    'label'   => __( 'Navigation Background Color', 'twist' ),
+                    'label'   => __( 'Navigation Background Color', 'ewpg-creo' ),
                     
                     'type'    => 'color',
                     'default' => '#000000'
@@ -197,8 +198,8 @@ class WeDevs_Settings_API_Test {
                
                 array(
                     'name'    => 'hide_nav',
-                    'label'   => __( 'Navigation Arrow', 'twist' ),
-                    'desc'    => __( 'Enable This Option if you want To keep Arrow Always Visiable', 'twist' ),
+                    'label'   => __( 'Navigation Arrow', 'ewpg-creo' ),
+                    'desc'    => __( 'Navigation Arrow Always Visiable', 'ewpg-creo' ),
                     'type'    => 'checkbox',
                     'default' => 'false',
                     'options' => array(
@@ -208,7 +209,7 @@ class WeDevs_Settings_API_Test {
                 ),
                 array(
                     'name'    => 'fade',
-                    'label'   => __( 'Fade Effect', 'twist' ),
+                    'label'   => __( 'Fade Effect', 'ewpg-creo' ),
                     
                     'type'    => 'checkbox',
                     'default' => 'false',
@@ -219,7 +220,7 @@ class WeDevs_Settings_API_Test {
                 ),
                 array(
                     'name'    => 'swipe',
-                    'label'   => __( 'Swipe To Slide', 'twist' ),
+                    'label'   => __( 'Swipe To Slide', 'ewpg-creo' ),
                     
                     'type'    => 'checkbox',
                     'default' => 'true',

@@ -43,7 +43,7 @@ if ( ! defined( 'WPINC' ) ) {
 		endif;
 	}
 /**
- * wc Version Check function
+ * Woocommerce Version Check function
  */
 function ewpg_version_check( $version = '3.0' ) {
 	if ( class_exists( 'WooCommerce' ) ) {

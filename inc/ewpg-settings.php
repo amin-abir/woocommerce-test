@@ -371,14 +371,14 @@ class WeDevs_Settings_API_Test {
                 ),
                 array(
                     'name'    => 'titleBackground',
-                    'label'   => __( 'Title background color', 'twist' ),
+                    'label'   => __( 'Title background color', 'ewpg-creo' ),
                     
                     'type'    => 'color',
                     'default' => '#000000'
                 ),
                 array(
                     'name'    => 'titleColor',
-                    'label'   => __( 'Title Text Color', 'twist' ),
+                    'label'   => __( 'Title Text Color', 'ewpg-creo' ),
                     
                     'type'    => 'color',
                     'default' => '#fff'
@@ -390,8 +390,8 @@ class WeDevs_Settings_API_Test {
 
                 array(
                     'name'    => 'zoom_start',
-                    'label'   => __( 'Zoom', 'twist' ),
-                    'desc'        => __( 'Turn on Woocommerce Default Zoom for Single Products', 'twist' ),
+                    'label'   => __( 'Zoom', 'ewpg-creo' ),
+                    'desc'        => __( 'Turn on Woocommerce Default Zoom for Single Products', 'ewpg-creo' ),
                     'type'    => 'checkbox',
                     'default' => 'false',
                     'options' => array(

@@ -281,14 +281,14 @@ class WeDevs_Settings_API_Test {
                 ),
                 array(
                     'name'    => 'arrowsColor',
-                    'label'   => __( 'Navigation Arrows Color', 'ewpg-creo' ),
+                    'label'   => __( 'Lightbox Navigation Arrows Color', 'ewpg-creo' ),
                     
                     'type'    => 'color',
                     'default' => '#fff'
                 ),
                 array(
                     'name'    => 'bgcolor',
-                    'label'   => __( 'Image Border Color', 'ewpg-creo' ),
+                    'label'   => __( 'Lightbox Image Border Color', 'ewpg-creo' ),
                     
                     'type'    => 'color',
                     'default' => '#fff'
@@ -296,29 +296,29 @@ class WeDevs_Settings_API_Test {
                 array(
                     'name'    => 'lightbox_framewidth',
                     'label'   => __( 'Image Frame Width', 'ewpg-creo' ),
-                    'desc'              => __( 'If the Lightbox image is not Fit to the Screen than you can use this option. <br>Default: 800(in Pixel)', 'ewpg-creo' ),
+                    'desc'              => __( 'Option to display lightbox image in your screen<br>By default: 900(in Pixel)', 'ewpg-creo' ),
                     'type'    => 'number',
-                    'default' => '800',
+                    'default' => '900',
                     
                 ),
                 array(
                     'name'              => 'borderwidth',
-                    'label'             => __( 'Image Border Width', 'twist' ),
-                    'desc'              =>__('In Pixel','twist'),
+                    'label'             => __( 'Image Border Width', 'ewpg-creo' ),
+                    'desc'              =>__('In Pixel','ewpg-creo'),
                     'type'              => 'number',
-                    'default'           => '5',
+                    'default'           => '3',
                     'sanitize_callback' => 'sanitize_text_field'
                 ),
                 array(
                     'name'    => 'spinColor',
-                    'label'   => __( 'Preloader color', 'twist' ),
+                    'label'   => __( 'Preloader color', 'ewpg-creo' ),
                     
                     'type'    => 'color',
                     'default' => '#fff'
                 ),
                 array(
                     'name'    => 'spinner1',
-                    'label'   => __( 'Preloader', 'twist' ),
+                    'label'   => __( 'Preloader', 'ewpg-creo' ),
                     
                     'type'    => 'select',
                     'default' => 'cube-grid',
@@ -346,17 +346,7 @@ class WeDevs_Settings_API_Test {
                         'false'  => 'No'
                     )
                 ),
-                array(
-                    'name'    => 'autoplay_videos',
-                    'label'   => __( 'Automatic play for videos', 'twist' ),
-                    
-                    'type'    => 'checkbox',
-                    'default' => 'true',
-                    'options' => array(
-                        'true' => 'Yes',
-                        'false'  => 'No'
-                    )
-                ),
+               
                 array(
                     'name'    => 'numeratio',
                     'label'   => __( 'Show Navigation number', 'twist' ),

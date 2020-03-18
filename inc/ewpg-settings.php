@@ -337,7 +337,7 @@ class WeDevs_Settings_API_Test {
 
                 array(
                     'name'    => 'lightbox_infinite',
-                    'label'   => __( 'Infinite', 'twist' ),
+                    'label'   => __( 'Infinite', 'ewpg-creo' ),
                     
                     'type'    => 'checkbox',
                     'default' => 'false',
@@ -349,7 +349,7 @@ class WeDevs_Settings_API_Test {
                
                 array(
                     'name'    => 'numeratio',
-                    'label'   => __( 'Show Navigation number', 'twist' ),
+                    'label'   => __( 'Show Navigation number', 'ewpg-creo' ),
                     
                     'type'    => 'checkbox',
                     'default' => 'true',
@@ -360,7 +360,7 @@ class WeDevs_Settings_API_Test {
                 ),
                 array(
                     'name'    => 'titlePosition',
-                    'label'   => __( 'Title Position', 'wedevs' ),
+                    'label'   => __( 'Title Position', 'ewpg-creo' ),
                     
                     'type'    => 'select',
                     'default' => 'bottom',

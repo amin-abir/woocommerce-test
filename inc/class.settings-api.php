@@ -635,13 +635,13 @@ class WeDevs_Settings_API {
                     file_frame.open();
                 });
                 // Deactive License  
-                $('#wedevs_advanced .submit input').val('Deactive License');
-                $('.nav-tab').click(function() {
-                   $('.el-license-container.shoe-data-lic').hide();
-                    });
-                $('#wedevs_advanced-tab').click(function() {
-                   $('.el-license-container.shoe-data-lic').fadeIn();
-                    });
+                // $('#wedevs_advanced .submit input').val('Deactive License');
+                // $('.nav-tab').click(function() {
+                //    $('.el-license-container.shoe-data-lic').hide();
+                //     });
+                // $('#wedevs_advanced-tab').click(function() {
+                //    $('.el-license-container.shoe-data-lic').fadeIn();
+                //     });
         });
         </script>
         <?php

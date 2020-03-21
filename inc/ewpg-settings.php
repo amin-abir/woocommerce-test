@@ -64,7 +64,7 @@ class WeDevs_Settings_API_Test {
             
             array(
                 'id'    => 'wedevs_advanced',
-                'title' => __( ' Twist License Info', 'ewpg-creo' )
+                'title' => __( 'License Info', 'ewpg-creo' )
             )
         );
         return $sections;
@@ -406,7 +406,7 @@ class WeDevs_Settings_API_Test {
                     'name'        => 'support',
                     'desc'        => __( '
                                                 
-                        <h3>Thank you for purchasing and activating <strong>« Twist »</strong> Plugin !</h3>
+                        
                         <p class="about-description">Every month, we try to release a new update for this Plugin with bugs fixed.<br>
                         If you found any problems in this Plugin please let us know. we will try to fix it ASAP.<br></p><br>
 
@@ -418,7 +418,7 @@ class WeDevs_Settings_API_Test {
                             font-size: 19px;
                         "></span> Plugin Support</a>
                         </span></strong>
-                        ', 'twist' ),
+                        ', 'ewpg-creo' ),
                     'type'        => 'html'
                 ),
            

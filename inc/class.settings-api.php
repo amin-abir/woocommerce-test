@@ -35,7 +35,7 @@ class WeDevs_Settings_API {
      */
     function admin_enqueue_scripts() {
         wp_enqueue_style( 'wp-color-picker' );
-        wp_enqueue_style( 'admin-pine',plugins_url()  .'/twist/assets/admin.css');
+        wp_enqueue_style( 'admin-pine',plugins_url()  .'/ewpg/assets/admin.css');
         wp_enqueue_media();
         wp_enqueue_script( 'wp-color-picker' );
         wp_enqueue_script( 'jquery' );
@@ -538,7 +538,7 @@ class WeDevs_Settings_API {
                         do_action( 'wsa_form_bottom_' . $form['id'], $form );
                         if ( isset( $this->settings_fields[ $form['id'] ] ) ):
                         ?>
-                        <div class="twist-admin" style="padding-left: 10px">
+                        <div class="ewpg-admin" style="padding-left: 10px">
                             <?php submit_button(); ?>
                         </div>
                         <?php endif; ?>

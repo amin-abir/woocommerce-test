@@ -55,9 +55,6 @@ $lightbox_framewidth = ewpg_get_option( 'lightbox_framewidth', 'lightbox_options
 $zoom_zoom_start = ewpg_get_option( 'zoom_start', 'zoom_magify','false');
 
 
-$twist_advance_css = ewpg_get_option( 'custom_css', 'twist_advance','');
-
-
 $lightbox_class = '';
 
 if($lightbox == 'true'){
@@ -484,8 +481,7 @@ margin-right: 1%;
 		color: <?php echo $nav_icon_color; ?>;
 		
 	}
-
-<?php echo $twist_advance_css; ?>
+	
 #slide-nav-pgs img {width: auto;}
 
 </style>

@@ -337,9 +337,7 @@ jQuery.noConflict();
 	    var variableIMG = imageObj.attr('href');
    		$('.woocommerce-product-gallery__image img').zoom({
 				touch: false,
-				url: variableIMG
-				
-					
+				url: variableIMG	
 				
 			});
 	  
@@ -367,16 +365,12 @@ jQuery.noConflict();
 				touch: false,
 				url: this.getAttribute("data-tzoom")
 				
-					
-				
 			});
 
 		});
 		$('.twist-pgs img').wrap('<span style="display:inline-block"></span>').parent().zoom({
 				touch: false,
-		  		//url: this.getAttribute("data-tzoom")
-					
-				
+
 			});
 	<?php endif; ?> 
 
@@ -482,9 +476,6 @@ margin-right: 1%;
 
 <?php endif; ?>
 
-	/* .twist-video-thumb:after{
-		color: <?php echo $video_icon_color; ?>;
-	} */
 
 	.btn-prev, .btn-next{
 		color: <?php echo $nav_icon_color; ?>;

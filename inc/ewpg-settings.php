@@ -51,11 +51,11 @@ class WeDevs_Settings_API_Test {
             ),
             array(
                 'id'    => 'single_options',
-                'title' => __( 'Feature Image Options', 'ewpg-creo' )
+                'title' => __( 'Feature Image Settings', 'ewpg-creo' )
             ),
             array(
                 'id'    => 'lightbox_options',
-                'title' => __( 'LightBox Options', 'ewpg-creo' )
+                'title' => __( 'LightBox Settings', 'ewpg-creo' )
             ),
             array(
                 'id'    => 'zoom_magify',

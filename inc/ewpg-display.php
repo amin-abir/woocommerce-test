@@ -44,7 +44,6 @@ $lightbox_bgcolor = ewpg_get_option( 'bgcolor', 'lightbox_options','#fff');
 $lightbox_borderwidth = ewpg_get_option( 'borderwidth', 'lightbox_options','5');
 $lightbox_spinColor = ewpg_get_option( 'spinColor', 'lightbox_options','#fff');
 $lightbox_spinner = ewpg_get_option( 'spinner1', 'lightbox_options','double-bounce');
-$lightbox_autoplay_videos = ewpg_get_option( 'autoplay_videos', 'lightbox_options','true');
 $lightbox_numeratio = ewpg_get_option( 'numeratio', 'lightbox_options','true');
 $lightbox_titlePosition = ewpg_get_option( 'titlePosition', 'lightbox_options','bottom');
 $lightbox_titleBackground = ewpg_get_option( 'titleBackground', 'lightbox_options','#000000');
@@ -84,7 +83,7 @@ if($lightbox == 'true'){
 
 	echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '
 				<div class="woocommerce-product-gallery__image single-product-main-image">
-					<a  class="venobox %s" href="%s" %s data-title="%s" data-gall="pgs-thumbs" >%s</a>
+					<a  class="venobox %s" href="%s" %s data-title="%s" data-gallery="ewpg-thumbs" >%s</a>
 				</div>',
 				$watermark_class,$popup_link,$datatype, $image_title, $image ), $post->ID );
 
@@ -92,7 +91,7 @@ if($lightbox == 'true'){
 		
 	echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '
 				<div class="woocommerce-product-gallery__image single-product-main-image">
-					<div class=" %s" data-title="%s" data-gall="pgs-thumbs" >%s</div>
+					<div class=" %s" data-title="%s" data-gallery="ewpg-thumbs" >%s</div>
 				</div>',
 				$watermark_class, $image_title, $image ), $post->ID );
 	}
@@ -110,14 +109,14 @@ if($lightbox == 'true'){
 			
 				foreach ( $attachment_ids as $attachment_id ) {
 					$full_size_image = wp_get_attachment_image_src( $attachment_id, 'full' );
-					$shop_single_img       = wp_get_attachment_image_src( $attachment_id, 'shop_single' );
+					$shop_single_img = wp_get_attachment_image_src( $attachment_id, 'shop_single' );
 					$title           = get_post_field( 'post_title', $attachment_id );
 
 					
 			 		if($disable_lightbox == 'false'){
 							echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '
 							<div>
-								<a class="venobox %s" href="%s" %s data-title="%s" data-gall="pgs-thumbs" ><img data-lazy="%s" data-tzoom="%s" ></a>
+								<a class="venobox %s" href="%s" %s data-title="%s" data-gallery="ewpg-thumbs" ><img data-lazy="%s" data-tzoom="%s" ></a>
 							</div>',
 							$watermark_class,$ewpg_set,$datatype, $title, $shop_single_img[0],$full_size_image[0]  ), $attachment_id );
 					 }
@@ -158,22 +157,22 @@ if ( $woocommerce->version >= '3.0' ){
 
 if ( $attachment_ids && has_post_thumbnail() ) {
 
-	$image_thumb = get_the_post_thumbnail( $post->ID, apply_filters( 'single_product_large_thumbnail_size', 'shop_thumbnail' ), 'pgs');
+	$image_thumb = get_the_post_thumbnail( $post->ID, apply_filters( 'single_product_large_thumbnail_size', 'shop_thumbnail' ), 'ewpg');
 
 	if($lightbox == 'false') :
 	/**
 	 * Check if Gallery have Video URL
 	 */
-	$popup_link = get_post_meta(get_post_thumbnail_id(), 'twist_video_url', true);
-	$datatype = 'data-vbtype="video"';
-	$watermark_class = 'twist-video-thumb';
+	//$popup_link = get_post_meta(get_post_thumbnail_id(), 'twist_video_url', true);
+	//$datatype = 'data-vbtype="video"';
+	//$watermark_class = 'twist-video-thumb';
 	$href = 'href';
-	if(empty($popup_link)) {
+	// if(empty($popup_link)) {
 
-		$popup_link = $image_link;
-		$datatype = '';	
-		$watermark_class = '';
-	}
+	// 	$popup_link = $image_link;
+	// 	$datatype = '';	
+	// 	$watermark_class = '';
+	// }
 	if($lightbox == 'false'){
 		$href = 'data-href';
 	}
@@ -181,7 +180,7 @@ if ( $attachment_ids && has_post_thumbnail() ) {
 	
 			echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', sprintf( '
 				<div>
-					<a class="product-gallery__image_thumb %s %s" data-title="%s" data-gall="pgs-thumbs" %s="%s" %s >%s</a>
+					<a class="product-gallery__image_thumb %s %s" data-title="%s" data-gallery="ewpg-thumbs" %s="%s" %s >%s</a>
 				</div>',
 				 $lightbox_class,$watermark_class,$image_title,$href,$popup_link,$datatype, $image_thumb ), $post->ID );
 		
@@ -198,7 +197,7 @@ if ( $attachment_ids && has_post_thumbnail() ) {
 		}
 
 		echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', sprintf( '
-				<div><a class="%s %s" data-title="%s" data-gall="pgs-thumbs" %s="%s" %s><img src="%s"></a></div>',
+				<div><a class="%s %s" data-title="%s" data-gallery="ewpg-thumbs" %s="%s" %s><img src="%s"></a></div>',
 				 $lightbox_class,$watermark_class,$title,$href,$ewpg_set,$datatype, $thumbnail[0] ), $attachment_id );
 	}
 	
@@ -233,7 +232,7 @@ jQuery.noConflict();
     $(document).ready(function(){
 	    $('.venobox').venobox({
 	    	framewidth: '<?php echo $lightbox_framewidth; ?>px',
-	    	autoplay: <?php echo $lightbox_autoplay_videos; ?>,
+	    	//autoplay: <?php //echo $lightbox_autoplay_videos; ?>,
 	    	titleattr: 'data-title',
 	    	titleBackground: '<?php echo $lightbox_titleBackground; ?>',
 	    	titleBackground: '<?php echo $lightbox_titleBackground; ?>',
@@ -493,9 +492,9 @@ margin-right: 1%;
 
 <?php endif; ?>
 
-	.twist-video-thumb:after{
+	/* .twist-video-thumb:after{
 		color: <?php echo $video_icon_color; ?>;
-	}
+	} */
 
 	.btn-prev, .btn-next{
 		color: <?php echo $nav_icon_color; ?>;

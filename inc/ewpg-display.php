@@ -160,19 +160,9 @@ if ( $attachment_ids && has_post_thumbnail() ) {
 	$image_thumb = get_the_post_thumbnail( $post->ID, apply_filters( 'single_product_large_thumbnail_size', 'shop_thumbnail' ), 'ewpg');
 
 	if($lightbox == 'false') :
-	/**
-	 * Check if Gallery have Video URL
-	 */
-	//$popup_link = get_post_meta(get_post_thumbnail_id(), 'twist_video_url', true);
-	//$datatype = 'data-vbtype="video"';
-	//$watermark_class = 'twist-video-thumb';
+	
 	$href = 'href';
-	// if(empty($popup_link)) {
 
-	// 	$popup_link = $image_link;
-	// 	$datatype = '';	
-	// 	$watermark_class = '';
-	// }
 	if($lightbox == 'false'){
 		$href = 'data-href';
 	}

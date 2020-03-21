@@ -3,23 +3,6 @@
  margin: 0px !important;
 }
 
-.twist-video-thumb {
-    position: relative;
-   
-    display: block;
-    
-}
-.twist-video-thumb:after {
-    position: absolute;
-    content: "\f236";
-    font-family: "dashicons";
-    top: 10px;
-    right: 10px;
-    font-size: 30px;
-    display: block;
-    color: #00b9eb;
-    
-}
 .btn-next {
     right: 0px;
 }
@@ -43,7 +26,7 @@
     outline: none;
 }
 
-.twist-pgs .btn-prev,.twist-pgs  .btn-next {
+.ewpg-display .btn-prev,.ewpg-display  .btn-next {
  position: absolute;
     top: 45%;
     z-index: 999;
@@ -68,14 +51,14 @@
     margin-left: -15px;
  
 }
-.twist-pgs{
+.ewpg-display{
     overflow: hidden;
      margin-bottom: 15px;
     }
 .slider-nav{
     overflow: hidden;
     }
-.twist-pgs:hover .btn-prev,.twist-pgs:hover .btn-next {
+.ewpg-display:hover .btn-prev,.ewpg-display:hover .btn-next {
     opacity: 1;
      margin: 0px;
 }
@@ -83,16 +66,16 @@
     opacity: 1;
    
 }
-.twist-pgs .btn-prev,
+.ewpg-display .btn-prev,
 .slider-nav .btn-prev
 {
     margin-left: -20px;
     }
-.twist-pgs .btn-next,
+.ewpg-display .btn-next,
 .slider-nav .btn-next {
     margin-right: -20px;
 }
-.twist-pgs .btn-prev,.twist-pgs .btn-next,
+.ewpg-display .btn-prev,.ewpg-display .btn-next,
  .slider-nav .btn-prev,.slider-nav .btn-next {
     opacity: 0;
     transition: all 0.3s ease-in-out;

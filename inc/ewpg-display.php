@@ -69,7 +69,7 @@ if($lightbox == 'true'){
 
 <div class="images twist-wrap">
 
-<div class="twist-pgs" <?php if($rtl == 'true'): echo ' dir="rtl" '; endif; ?>>
+<div class="ewpg-display" <?php if($rtl == 'true'): echo ' dir="rtl" '; endif; ?>>
 <?php 
 
 	if ( has_post_thumbnail() ) {
@@ -222,7 +222,6 @@ jQuery.noConflict();
     $(document).ready(function(){
 	    $('.venobox').venobox({
 	    	framewidth: '<?php echo $lightbox_framewidth; ?>px',
-	    	//autoplay: <?php //echo $lightbox_autoplay_videos; ?>,
 	    	titleattr: 'data-title',
 	    	titleBackground: '<?php echo $lightbox_titleBackground; ?>',
 	    	titleBackground: '<?php echo $lightbox_titleBackground; ?>',
@@ -241,13 +240,13 @@ jQuery.noConflict();
 	   
 	    // go to next item in gallery clicking on .next
     $(document).on('click', '.vbox-next', function(e){
-      $('.twist-pgs .btn-next').trigger( "click" );
+      $('.ewpg-display .btn-next').trigger( "click" );
     });
      
 
 	  <?php if($lightbox == 'false'):  ?>
 
-		  $('.twist-pgs').slick({
+		  $('.ewpg-display').slick({
   		  accessibility: false,//prevent scroll to top
   		  lazyLoad: 'progressive',
 		  slidesToShow: 1,
@@ -288,7 +287,7 @@ jQuery.noConflict();
 		  slidesToShow: <?php echo $thum2show; ?>,
 		  slidesToScroll: <?php echo $thumscrollby; ?> ,
 		  infinite: <?php echo $infinite; ?>,
-		  <?php if($lightbox == 'false'): echo 'asNavFor: \'.twist-pgs\',' ; endif; ?>
+		  <?php if($lightbox == 'false'): echo 'asNavFor: \'.ewpg-display\',' ; endif; ?>
 
 		  <?php if($rtl == 'false'): ?>
 		   prevArrow: '<i class="btn-prev dashicons dashicons-arrow-left-alt2"></i>',
@@ -344,7 +343,7 @@ jQuery.noConflict();
 	<?php endif; ?> 
 
 	    if (!(imageObj.width() == 1 && imageObj.height() == 1)) {
-	    	$('.twist-pgs .woocommerce-product-gallery__image , #slide-nav-pgs .slick-slide .product-gallery__image_thumb').trigger('click');
+	    	$('.ewpg-display .woocommerce-product-gallery__image , #slide-nav-pgs .slick-slide .product-gallery__image_thumb').trigger('click');
 	   			$('.woocommerce-product-gallery__image img').trigger('zoom.destroy');
 	   				<?php if($zoom_zoom_start == 'true') : ?>
 		
@@ -360,7 +359,7 @@ jQuery.noConflict();
 	});
 	<?php if($zoom_zoom_start == 'true') : ?>
 
-    	$('.twist-pgs img').load(function() {
+    	$('.ewpg-display img').load(function() {
 			$(this).wrap('<span style="display:inline-block"></span>').parent().zoom({
 				touch: false,
 				url: this.getAttribute("data-tzoom")
@@ -368,7 +367,7 @@ jQuery.noConflict();
 			});
 
 		});
-		$('.twist-pgs img').wrap('<span style="display:inline-block"></span>').parent().zoom({
+		$('.ewpg-display img').wrap('<span style="display:inline-block"></span>').parent().zoom({
 				touch: false,
 
 			});
@@ -385,12 +384,12 @@ jQuery.noConflict();
 <?php
 if($single_hide_nav == 'true') : ?>
 
-.twist-pgs .btn-prev, .slider-nav .btn-prev { opacity: 1 !important; margin-left: 0; }
-.twist-pgs .btn-next, .slider-nav .btn-next { margin-right: 0; opacity: 1 !important; }
+.ewpg-display .btn-prev, .slider-nav .btn-prev { opacity: 1 !important; margin-left: 0; }
+.ewpg-display .btn-next, .slider-nav .btn-next { margin-right: 0; opacity: 1 !important; }
 
 <?php endif; ?>
 <?php if($layout == 'vertical_r' && $single_hide_thumb == 'false') : ?>
-.twist-pgs {
+.ewpg-display {
 width: 79%;
 float: left;
 margin-right: 1%;
@@ -399,7 +398,7 @@ margin-right: 1%;
 	margin-left: -15px !important;
 }
 @media only screen and (max-width: 767px) {
-   .twist-pgs {
+   .ewpg-display {
 	 width: 100%;
     float: none;
     margin-left: 0%;
@@ -412,14 +411,14 @@ margin-right: 1%;
 <?php endif; ?>
 
 <?php if($layout == 'vertical' && $single_hide_thumb == 'false') : ?>
-	.twist-pgs {
+	.ewpg-display {
 	 width: 79%;
     float: right;
     margin-left: 1%;
 
 }
 @media only screen and (max-width: 767px) {
-   .twist-pgs {
+   .ewpg-display {
 	 width: 100%;
     float: none;
     margin-left: 0%;
@@ -430,7 +429,7 @@ margin-right: 1%;
 }
 }
 <?php elseif($layout == 'vertical' && $single_hide_thumb == 'true') : ?>
-.twist-pgs {
+.ewpg-display {
 	 width: 100%;
 }
 <?php else : ?>
@@ -444,7 +443,7 @@ margin-right: 1%;
 #slide-nav-pgs {
     display: none;
 }
-.twist-pgs{
+.ewpg-display{
 	width: 100%;
 	margin: 0px;
 }
@@ -456,7 +455,7 @@ margin-right: 1%;
 #slide-nav-pgs{
 	display: none;
 }
-.twist-pgs{
+.ewpg-display{
 	width: 100%;
 }
 <?php endif; ?>

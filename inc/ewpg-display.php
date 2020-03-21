@@ -64,7 +64,7 @@ if($lightbox == 'true'){
 ?>
 
 
-<div class="images twist-wrap">
+<div class="images main-wrap">
 
 <div class="ewpg-display" <?php if($rtl == 'true'): echo ' dir="rtl" '; endif; ?>>
 <?php 
@@ -481,7 +481,7 @@ margin-right: 1%;
 		color: <?php echo $nav_icon_color; ?>;
 		
 	}
-	
+
 #slide-nav-pgs img {width: auto;}
 
 </style>

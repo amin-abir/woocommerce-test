@@ -99,14 +99,22 @@ input:checked + .slider:before {
   border: none;
 }
 .ewpg-admin .button-primary {
-    background: #00adff;
-    border: none;
-    box-shadow: none;
-    text-shadow: none;
-    height: 43px;
-    padding: 0px 20px;
-    font-size: 15px;
-    font-weight: 600;
+  background-color: rgb(102, 72, 254);
+  background-image: -webkit-linear-gradient(-169deg, #15c7a4 0%, #37de89 100%);
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  padding: 8px 25px;
+  border-radius: 3px;
+  margin: 30px 0px;
+  transition: all 0.3s ease 0s;
 }
 .ewpg-admin-wrap .nav-tab{
     border-bottom: 1px solid #ccc;

@@ -413,7 +413,7 @@ class WeDevs_Settings_API_Test {
 
                        
                         
-                        <a target="_blank" href="http://codeixer.com/s"><span class="dashicons dashicons-sos" style="
+                        <a target="_blank" href="#"><span class="dashicons dashicons-sos" style="
                             text-decoration: none;
                             font-size: 19px;
                         "></span> Plugin Support</a>

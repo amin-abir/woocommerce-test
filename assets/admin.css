@@ -45,6 +45,11 @@ input:checked + .slider {
 input:focus + .slider {
   box-shadow: 0 0 1px #2196F3;
 }
+
+.ewpg-admin-wrap{
+  padding: 15px;
+}
+
 .ewpg-admin-wrap input ,.ewpg-admin-wrap input[type=number] {
     /* height: 40px; */
     
@@ -72,12 +77,9 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
  .ewpg-admin-wrap .metabox-holder {
-    /* padding-top: 10px; */
-        margin-top: 5px;
+    margin-top: 15px;
     background: #fff;
     padding: 20px;
-   
-    border-top: 3px solid #00adff;
 }
 .ewpg-admin-wrap .nav-tab-wrapper, .wrap h2.nav-tab-wrapper, h1.nav-tab-wrapper {
     border-bottom: 0px solid #ccc;

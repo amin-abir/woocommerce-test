@@ -79,7 +79,7 @@ input:checked + .slider:before {
  .ewpg-admin-wrap .metabox-holder {
     margin-top: 15px;
     background: #fff;
-    padding: 20px;
+    padding: 15px 25px;
 }
 .ewpg-admin-wrap .nav-tab-wrapper, .wrap h2.nav-tab-wrapper, h1.nav-tab-wrapper {
     border-bottom: 0px solid #ccc;
@@ -93,10 +93,10 @@ input:checked + .slider:before {
     margin-left: 0px;
 }
 .ewpg-admin-wrap .nav-tab-active, .nav-tab-active:focus, .nav-tab-active:focus:active, .nav-tab-active:hover {
-    border: 1px solid #00adff !important;
-    background: #00adff !important;
-    color: #fff !important;
-        border: none;
+  background-color: #36d692!important;
+  border-color: #36d692!important;;
+  color: #fff !important;
+  border: none;
 }
 .ewpg-admin .button-primary {
     background: #00adff;

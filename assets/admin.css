@@ -109,8 +109,16 @@ input:checked + .slider:before {
     font-weight: 600;
 }
 .ewpg-admin-wrap .nav-tab{
-      border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 20px;
+    background-color: #f8fafb;
+    color: #516378;
+    font-size: 14px;
+    font-weight: 600;
 }
+
+
+
 .ewpg-admin-wrap .wp-core-ui .notice.is-dismissible {
     padding-right: 38px;
     position: relative;

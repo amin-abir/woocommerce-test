@@ -35,7 +35,7 @@ class WeDevs_Settings_API {
      */
     function admin_enqueue_scripts() {
         wp_enqueue_style( 'wp-color-picker' );
-        wp_enqueue_style( 'admin-pine',plugins_url()  .'/ewpg/assets/admin.css');
+        wp_enqueue_style( 'admin-pine',plugins_url()  .'/excellent-woocomerce-product-gallery/assets/admin.css');
         wp_enqueue_media();
         wp_enqueue_script( 'wp-color-picker' );
         wp_enqueue_script( 'jquery' );

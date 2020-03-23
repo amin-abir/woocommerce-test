@@ -27,15 +27,16 @@ label.switch {
     color: transparent;
 }
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 22px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 22px;
+    left: 5px;
+    border-radius: 50px;
+    bottom: 5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
 input:checked + .slider {

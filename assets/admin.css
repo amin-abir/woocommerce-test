@@ -52,10 +52,9 @@ input:focus + .slider {
 }
 
 .ewpg-admin-wrap input ,.ewpg-admin-wrap input[type=number] {
-    /* height: 40px; */
-    
-    font-size: 14px;
-    padding: 7px 10px;
+  height: 40px;
+  font-size: 14px;
+  padding: 6px 8px;
 }
 .ewpg-admin-wrap select{
   padding: 4px 6px 4px 10px;

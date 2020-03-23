@@ -58,10 +58,10 @@ input:focus + .slider {
     padding: 7px 10px;
 }
 .ewpg-admin-wrap select{
-    padding: 4px;
-    line-height: 28px;
-    height: 35px;
-    min-width: 130px;
+  padding: 4px 6px 4px 10px;
+  line-height: 28px;
+  height: 42px;
+  min-width: 160px;
 }
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);

@@ -57,10 +57,10 @@ class WeDevs_Settings_API_Test {
                 'id'    => 'lightbox_options',
                 'title' => __( 'LightBox Settings', 'ewpg-creo' )
             ),
-            array(
-                'id'    => 'zoom_magify',
-                'title' => __( 'Zoom Options', 'ewpg-creo' )
-            ),
+            // array(
+            //     'id'    => 'zoom_magify',
+            //     'title' => __( 'Zoom Options', 'ewpg-creo' )
+            // ),
             
             array(
                 'id'    => 'wedevs_advanced',
@@ -262,6 +262,20 @@ class WeDevs_Settings_API_Test {
                         'false'  => 'No'
                     )
                 ),
+
+
+                    array(
+                        'name'    => 'zoom_start',
+                        'label'   => __( 'Woocommerce Zoom', 'ewpg-creo' ),
+                        'desc'        => __( 'Turn on Woocommerce Default Zoom for Single Products', 'ewpg-creo' ),
+                        'type'    => 'checkbox',
+                        'default' => 'false',
+                        'options' => array(
+                            'true' => 'Yes',
+                            'false'  => 'No'
+                        )
+                    ),
+              
                 
                
                 
@@ -328,8 +342,6 @@ class WeDevs_Settings_API_Test {
                         'wave'  => 'Wave',
                         'cube-grid'  => 'Cube Grid',
                         'three-bounce'  => 'Three Bounce',
-                        'spinner-pulse'  => 'Spinner Pulse',
-                        'wandering-cubes'  => 'Wandering Cubes'
                     )
                 ),
 
@@ -386,20 +398,7 @@ class WeDevs_Settings_API_Test {
                 
             ),
             
-            'zoom_magify' => array(
-
-                array(
-                    'name'    => 'zoom_start',
-                    'label'   => __( 'Zoom', 'ewpg-creo' ),
-                    'desc'        => __( 'Turn on Woocommerce Default Zoom for Single Products', 'ewpg-creo' ),
-                    'type'    => 'checkbox',
-                    'default' => 'false',
-                    'options' => array(
-                        'true' => 'Yes',
-                        'false'  => 'No'
-                    )
-                ),
-            ),
+            
             'wedevs_advanced' => array(
                 
                 array(

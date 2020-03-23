@@ -52,7 +52,7 @@ $lightbox_infinite = ewpg_get_option( 'lightbox_infinite', 'lightbox_options','f
 $lightbox_framewidth = ewpg_get_option( 'lightbox_framewidth', 'lightbox_options','1024');
 
 
-$zoom_zoom_start = ewpg_get_option( 'zoom_start', 'zoom_magify','false');
+$zoom_zoom_start = ewpg_get_option( 'zoom_start', 'single_options','false');
 
 
 $lightbox_class = '';

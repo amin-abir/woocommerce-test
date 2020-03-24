@@ -57,11 +57,7 @@ class WeDevs_Settings_API_Test {
                 'id'    => 'lightbox_options',
                 'title' => __( 'LightBox Settings', 'ewpg-creo' )
             ),
-            // array(
-            //     'id'    => 'zoom_magify',
-            //     'title' => __( 'Zoom Options', 'ewpg-creo' )
-            // ),
-            
+           
             array(
                 'id'    => 'wedevs_advanced',
                 'title' => __( 'License Info', 'ewpg-creo' )

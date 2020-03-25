@@ -1,9 +1,8 @@
 <?php 
 /**
- * Single Product Image
+ * Single Product Page Display 
  *
  * 
- *
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -205,7 +204,6 @@ if(count($attachment_ids) < $thum2show ){
 }
 
 ?>
-
 
 <script>
 jQuery.noConflict();
